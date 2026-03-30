@@ -13,7 +13,7 @@ compatibility: >-
 
 # Intent documentation methodology
 
-This skill guides **human** authors through **draft → AI-assisted review → second human review** workflows. Product docs express **who**, **what**, and **why** (intent). Engineering docs express **where** and **how** (implementation), with **tangible** components. **Traceability** from product requirements to components is maintained in **`docs/engineering/README.md`** (table rows; a requirement may map to **multiple** components).
+This skill guides **human** authors through **draft → AI-assisted review → independent review** workflows. Product docs express **who**, **what**, and **why** (intent). Engineering docs express **where** and **how** (implementation), with **tangible** components. **Traceability** from product requirements to components is maintained in **`docs/engineering/README.md`** (table rows; a requirement may map to **multiple** components).
 
 ## Defaults
 
@@ -50,6 +50,7 @@ Supporting references: [`references/context-loading.md`](references/context-load
 
 ## Authoring checklist (short)
 
+- [ ] **Read [`references/context-loading.md`](references/context-loading.md) first** in every session; then follow the relevant [`references/workflow-*.md`](references/README.md) **Load** line (bundles **B0–B5** with short descriptions).
 - [ ] Use the matching template from [`assets/README.md`](assets/README.md); preserve **fixed section order** among sections you keep. For **JTBD** product roots, load [`references/jtbd-primer.md`](references/jtbd-primer.md) with [`assets/product-root-jtbd.md`](assets/product-root-jtbd.md). For requirement decomposition, see [`references/decomposing-requirements.md`](references/decomposing-requirements.md).
 - [ ] **Review** against [`references/review-product.md`](references/review-product.md) or [`references/review-engineering.md`](references/review-engineering.md) as appropriate; CRs: [`references/review-change-records.md`](references/review-change-records.md).
 - [ ] **Emit** per [`references/emit-records.md`](references/emit-records.md).

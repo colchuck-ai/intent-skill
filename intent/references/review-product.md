@@ -1,6 +1,6 @@
 # Review criteria — product tree
 
-Use for **AI review** and **second human review** after drafting. **Language:** product-facing docs use **product language**—who, value, outcomes; **precise** where it helps; avoid undefined jargon. Do not leak implementation-heavy vocabulary into product-only sections where it would confuse intent.
+Use for **AI review** and **independent review** after drafting. **Language:** product-facing docs use **product language**—who, value, outcomes; **precise** where it helps; avoid undefined jargon. Do not leak implementation-heavy vocabulary into product-only sections where it would confuse intent.
 
 ## Structural consistency (product tree)
 
@@ -34,7 +34,20 @@ Use for **AI review** and **second human review** after drafting. **Language:** 
 - **Horizontal:** No conflict with sibling outcomes’ requirements unless resolved upstream.
 - **Multi-component:** Wording allows **several components** to satisfy one requirement.
 
+### Before expanding requirement detail files
+
+Use when the **compressed** layer (one-liners and risk mappings on the outcome **`README.md`**) is locked but full requirement files under **`requirements/`** are not written yet. Review that layer **as a set**:
+
+- Every requirement traces to **exactly one** outcome.
+- Requirements are **capabilities** (“the system detects X”), not implementations (“use a regex”).
+- No requirement is **redundant** with another under the same outcome.
+- Every risk maps to a **mitigating requirement** (when the outcome README uses risks).
+- The set under each outcome is **sufficient**—you cannot describe a realistic failure that nothing addresses.
+- Read **all** requirement one-liners **across outcomes**: no contradictory capabilities or overlapping scope between requirements.
+
 ## Requirement artifact (simple file or complex directory)
+
+After expanding files under **`requirements/`**, apply **Structural consistency (product tree)** and the criteria below.
 
 - **Clarity:** What must be true, for whom, why it matters (acceptance-oriented where useful).
 - **Scope:** Matches the one-liner; complex dirs: **README canonical**; siblings are supporting.

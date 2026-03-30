@@ -7,8 +7,8 @@ Curated methodology and workflows—load on demand. **[`../SKILL.md`](../SKILL.m
 | File | One-line purpose |
 |------|------------------|
 | [`docs-layout.md`](docs-layout.md) | Canonical `docs/product` and `docs/engineering` tree; simple vs complex; IDs. |
-| [`context-loading.md`](context-loading.md) | What to load per session; B0–B5 bundles; session types; light second review. |
-| [`decomposing-requirements.md`](decomposing-requirements.md) | Why/how/how-else, risks, completeness; requirement index and detail review bars. |
+| [`context-loading.md`](context-loading.md) | Read **first** in every session; **B0–B5** bundle definitions; session types; then [`workflow-*.md`](README.md) steps list which bundles to pull. |
+| [`decomposing-requirements.md`](decomposing-requirements.md) | Why/how/how-else, risks, completeness—decomposing outcomes into requirements. |
 | [`emit-records.md`](emit-records.md) | When to emit PDR vs ADR vs CR and at what scope. |
 | [`jtbd-primer.md`](jtbd-primer.md) | JTBD/ODI concepts for [`product-root-jtbd.md`](../assets/product-root-jtbd.md)—load with that template. |
 
