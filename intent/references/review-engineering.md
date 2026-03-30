@@ -1,6 +1,6 @@
 # Review criteria — engineering tree
 
-Use for **AI review** and **second human review** after drafting. **Language:** engineering docs use **precise technical language** where it helps; define terms on first use when needed; keep **shared terminology** aligned with product where concepts overlap.
+Use for **AI review** and **independent review** after drafting. **Language:** engineering docs use **precise technical language** where it helps; define terms on first use when needed; keep **shared terminology** aligned with product where concepts overlap.
 
 ## Structural consistency (engineering tree)
 
