@@ -13,16 +13,21 @@ These rules apply to all files under `intent/assets/` (document templates per [A
 - **Scoped numbering:** Prefixes (`O`, `R`, `C`, `PDR`, `ADR`, `CR`) reset or vary **per parent folder**. The same numeric suffix may appear under different parents.
 - **Placeholders** in templates use angle brackets: `<slug>`, `<Title>`, `<n>`, etc. Replace them with real values; **do not** leave placeholders in finished docs.
 - **Numeric IDs in titles and examples:** **`NNN`** means **three decimal digits, zero-padded** (e.g. `001`, `012`, `120`). Examples: `# PDR<NNN>:`, `# ADR<NNN>:`, `# CR<NNN>:`, `# O<NNN>:`, `# O<NNN>-R<NNN>:`, `# C<NNN>:`—each **`<NNN>`** is replaced with the scoped id for that artifact (the same placeholder may appear multiple times; use distinct values per artifact when you instantiate the template).
+- **Kebab short name in filenames:** After the scoped ID (or ID chain), include a **kebab-case** segment—do not end the filename on the number alone (prefer `PROD-CR001-changelog.md`, not `PROD-CR001.md`).
+- **Root change records (avoid cross-tree collisions):** Files in **`docs/product/crs/`** use **`PROD-CR<NNN>-<kebab-slug>.md`** (or complex directory **`PROD-CR<NNN>-<kebab-slug>/`**). Files in **`docs/engineering/crs/`** use **`ENG-CR<NNN>-<kebab-slug>.md`** (or **`ENG-CR<NNN>-<kebab-slug>/`**). That way `PROD-CR001-…` and `ENG-CR001-…` never collide, and **`PROD-CR`** stays visually distinct from **PDR** (product decision record). Nested `crs/` (under outcomes, requirements, components) use the existing scope prefixes (`O001-CR…`, `O001-R001-CR…`, `C001-CR…`) plus kebab.
 - **Suggested patterns** (align with your team’s padding rules if any):
   - Outcomes: `O001-<slug>/`, `O002-<slug>/`, … under `docs/product/outcomes/`
   - Requirements: `O001-R001-<slug>` under `outcomes/O001-<slug>/requirements/`
   - Components: `C001-<slug>` under `docs/engineering/components/`
-  - PDR / ADR / CR: `PDR001-…`, `ADR001-…`, `CR001-…` under the `pdrs/`, `adrs/`, or `crs/` folder for that scope.
+  - PDR / ADR: `PDR001-<kebab>.md`, `ADR001-<kebab>.md`, … under the `pdrs/` or `adrs/` folder for that scope (complex: `PDR001-<kebab>/README.md`).
 
 Nested path examples:
 
-- Outcome-level CR: `outcomes/O001-<slug>/crs/O001-CR001-…`
-- Requirement-level CR: `…/requirements/O001-R001-<slug>/crs/O001-R001-CR001-…`
+- Product root CR: `docs/product/crs/PROD-CR001-<kebab>.md`
+- Engineering root CR: `docs/engineering/crs/ENG-CR001-<kebab>.md`
+- Outcome-level CR: `outcomes/O001-<slug>/crs/O001-CR001-<kebab>.md`
+- Requirement-level CR: `…/requirements/O001-R001-<slug>/crs/O001-R001-CR001-<kebab>.md`
+- Component-level CR: `…/components/C001-<slug>/crs/C001-CR001-<kebab>.md`
 
 ## Simple vs complex
 

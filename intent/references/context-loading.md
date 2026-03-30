@@ -2,6 +2,8 @@
 
 Principles for **what to read** before drafting or reviewing. Pair with workflow files under [`README.md`](README.md) (Workflows).
 
+**Read this file first in every session** (draft, AI review, independent review, or ad-hoc edit pass): load bundle definitions (**B0–B5** below), then open the relevant [`workflow-*.md`](README.md) steps and pull the artifacts each bundle points to.
+
 ## Principles
 
 1. **Minimum sufficient graph:** Load the **artifact in scope**, its **parents** (vertical), and **siblings** only when checking overlap, completeness, or horizontal consistency.
@@ -28,8 +30,8 @@ Principles for **what to read** before drafting or reviewing. Pair with workflow
 |---------|------|
 | **Draft** | Produce or revise text/assets. |
 | **AI review** | Validate draft against **B2**. |
-| **Second human review** | Human judgment; may use **B2** + artifact for a light assistant pass. |
+| **Independent review** | Another person’s judgment (not the draft author); may use **B2** + artifact for a light assistant pass. |
 
-## Second human review (assistant-light)
+## Independent review (assistant-light)
 
 Load **B2**, the **final artifact**, and a **one-screen parent summary** (e.g. parent headings). Avoid full peer trees unless the reviewer flags a conflict.

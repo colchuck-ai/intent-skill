@@ -1,6 +1,6 @@
 # Review criteria — change records (CRs)
 
-Use when drafting or reviewing **CRs** at any scope. Pair with [`emit-records.md`](emit-records.md). PDR/ADR **decision** quality is reviewed under [`review-product.md`](review-product.md) and [`review-engineering.md`](review-engineering.md).
+Use when drafting or reviewing **CRs** at any scope. Pair with [`emit-records.md`](emit-records.md). **PDR** review criteria are under **PDRs (simple or complex)** in [`review-product.md`](review-product.md); **ADR** review criteria are under **ADRs (simple or complex)** in [`review-engineering.md`](review-engineering.md). This file is only for **CRs**.
 
 ## Structural consistency (change records)
 
