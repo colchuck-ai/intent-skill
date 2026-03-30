@@ -1,7 +1,7 @@
 {
   "name": "intent-skill",
   "private": true,
-  "description": "Building-intent product/engineering documentation skill (Cursor Agent Skill)",
+  "description": "Agent Skill (agentskills.io) for product/engineering intent documentation",
   "scripts": {
     "semantic-release": "semantic-release",
     "commitlint": "commitlint --edit",
