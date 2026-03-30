@@ -1,6 +1,6 @@
 # JTBD primer (for product root work)
 
-Short orientation for assistants drafting or reviewing **[`../assets/product-root-jtbd.md`](../assets/product-root-jtbd.md)**. This follows the **Strategyn / Ulwick** style of **Jobs-to-be-Done** and **Outcome-Driven Innovation (ODI)**—other JTBD schools differ.
+Short orientation for assistants drafting or reviewing **[`../../assets/product-root-jtbd.md`](../../assets/product-root-jtbd.md)**. This follows the **Strategyn / Ulwick** style of **Jobs-to-be-Done** and **Outcome-Driven Innovation (ODI)**—other JTBD schools differ.
 
 ## Template shape (one outline, optional depth)
 
@@ -40,4 +40,4 @@ Under **Core functional job**, **job step** groups (`####`) are **process**—wh
 
 ## What to do with this file
 
-When the session uses **[`product-root-jtbd.md`](../assets/product-root-jtbd.md)**, load this primer **with** the template and **B2** [`review-product.md`](review-product.md) (product root criteria).
+When the session uses **[`product-root-jtbd.md`](../../assets/product-root-jtbd.md)**, load this primer **with** the template and follow **[`Develop product`](../workflows/develop-product.md)** for draft and review sessions—intent language and boundaries live there.

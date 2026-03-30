@@ -1,32 +1,13 @@
-# Reference index (`references/`)
+# References
 
-Curated methodology and workflows—load on demand. **[`../SKILL.md`](../SKILL.md)** is the activation entrypoint and primary router.
+Supporting material that is not a **workflow** lives here.
 
-## Layout and methodology
+**[`guides/`](guides/)** — layout, naming, lifecycle heuristics, and optional JTBD depth.
 
-| File | One-line purpose |
-|------|------------------|
-| [`docs-layout.md`](docs-layout.md) | Canonical `docs/product` and `docs/engineering` tree; simple vs complex; IDs. |
-| [`context-loading.md`](context-loading.md) | Read **first** in every session; **B0–B5** bundle definitions; session types; then [`workflow-*.md`](README.md) steps list which bundles to pull. |
-| [`decomposing-requirements.md`](decomposing-requirements.md) | Why/how/how-else, risks, completeness—decomposing outcomes into requirements. |
-| [`emit-records.md`](emit-records.md) | When to emit PDR vs ADR vs CR and at what scope. |
-| [`jtbd-primer.md`](jtbd-primer.md) | JTBD/ODI concepts for [`product-root-jtbd.md`](../assets/product-root-jtbd.md)—load with that template. |
+| File | Role |
+|------|------|
+| [`guides/structure.md`](guides/structure.md) | Canonical `docs/product` and `docs/engineering` trees; IDs, kebab names, PDR/ADR/CR patterns, simple vs complex. |
+| [`guides/intent-tree-phase.md`](guides/intent-tree-phase.md) | Heuristic **greenfield vs brownfield** via `ls` / `grep` only; workflow bias. |
+| [`guides/jtbd-primer.md`](guides/jtbd-primer.md) | Optional depth on JTBD-style framing when using [`product-root-jtbd`](../assets/product-root-jtbd.md). |
 
-## Review checklists
-
-| File | One-line purpose |
-|------|------------------|
-| [`review-product.md`](review-product.md) | Product root through requirements and PDRs—including **product language**, **structural consistency (product tree)**, and traceability. |
-| [`review-engineering.md`](review-engineering.md) | Engineering root, components, ADRs—including **engineering language**, **structural consistency (engineering tree)**, and traceability. |
-| [`review-change-records.md`](review-change-records.md) | CR quality at any scope—including **structural consistency (change records)**. |
-
-## Workflows (procedures)
-
-| File | One-line purpose |
-|------|------------------|
-| [`workflow-product-root.md`](workflow-product-root.md) | Draft/review `docs/product/README.md` (simple or JTBD). |
-| [`workflow-outcomes.md`](workflow-outcomes.md) | Outcomes on root + per-outcome READMEs. |
-| [`workflow-requirements.md`](workflow-requirements.md) | Requirement index + requirement detail files. |
-| [`workflow-engineering-root.md`](workflow-engineering-root.md) | `docs/engineering/README.md` and components table. |
-| [`workflow-components.md`](workflow-components.md) | Component simple/complex + updating the engineering table. |
-| [`workflow-changes.md`](workflow-changes.md) | Editing existing artifacts; CR/PDR/ADR in the loop. |
+Workflows (activity-based, three sessions each): [`workflows/README.md`](workflows/README.md).
